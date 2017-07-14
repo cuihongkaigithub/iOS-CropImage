@@ -15,6 +15,9 @@
 		CD4AEB481F15F7EA00EFD46F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD4AEB461F15F7EA00EFD46F /* LaunchScreen.storyboard */; };
 		CD4AEB531F15F7EA00EFD46F /* EditImage_DemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CD4AEB521F15F7EA00EFD46F /* EditImage_DemoTests.m */; };
 		CD4AEB5E1F15F7EA00EFD46F /* EditImage_DemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CD4AEB5D1F15F7EA00EFD46F /* EditImage_DemoUITests.m */; };
+		CD4AEB6D1F16004400EFD46F /* ImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD4AEB6C1F16004400EFD46F /* ImageViewController.m */; };
+		CD4AEB701F16014C00EFD46F /* TapImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = CD4AEB6F1F16014C00EFD46F /* TapImageView.m */; };
+		CD6324781F189A3900DC6290 /* UIImage+Crop.m in Sources */ = {isa = PBXBuildFile; fileRef = CD6324771F189A3900DC6290 /* UIImage+Crop.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,12 @@
 		CD4AEB591F15F7EA00EFD46F /* EditImage-DemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "EditImage-DemoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD4AEB5D1F15F7EA00EFD46F /* EditImage_DemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EditImage_DemoUITests.m; sourceTree = "<group>"; };
 		CD4AEB5F1F15F7EA00EFD46F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD4AEB6B1F16004400EFD46F /* ImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageViewController.h; sourceTree = "<group>"; };
+		CD4AEB6C1F16004400EFD46F /* ImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageViewController.m; sourceTree = "<group>"; };
+		CD4AEB6E1F16014C00EFD46F /* TapImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TapImageView.h; sourceTree = "<group>"; };
+		CD4AEB6F1F16014C00EFD46F /* TapImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TapImageView.m; sourceTree = "<group>"; };
+		CD6324761F189A3900DC6290 /* UIImage+Crop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Crop.h"; sourceTree = "<group>"; };
+		CD6324771F189A3900DC6290 /* UIImage+Crop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Crop.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +114,12 @@
 				CD4AEB3C1F15F7EA00EFD46F /* AppDelegate.m */,
 				CD4AEB3E1F15F7EA00EFD46F /* ViewController.h */,
 				CD4AEB3F1F15F7EA00EFD46F /* ViewController.m */,
+				CD6324761F189A3900DC6290 /* UIImage+Crop.h */,
+				CD6324771F189A3900DC6290 /* UIImage+Crop.m */,
+				CD4AEB6B1F16004400EFD46F /* ImageViewController.h */,
+				CD4AEB6C1F16004400EFD46F /* ImageViewController.m */,
+				CD4AEB6E1F16014C00EFD46F /* TapImageView.h */,
+				CD4AEB6F1F16014C00EFD46F /* TapImageView.m */,
 				CD4AEB411F15F7EA00EFD46F /* Main.storyboard */,
 				CD4AEB441F15F7EA00EFD46F /* Assets.xcassets */,
 				CD4AEB461F15F7EA00EFD46F /* LaunchScreen.storyboard */,
@@ -207,6 +222,7 @@
 				TargetAttributes = {
 					CD4AEB341F15F7EA00EFD46F = {
 						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = GX4T7SPG84;
 						ProvisioningStyle = Automatic;
 					};
 					CD4AEB4D1F15F7EA00EFD46F = {
@@ -275,7 +291,10 @@
 			files = (
 				CD4AEB401F15F7EA00EFD46F /* ViewController.m in Sources */,
 				CD4AEB3D1F15F7EA00EFD46F /* AppDelegate.m in Sources */,
+				CD4AEB6D1F16004400EFD46F /* ImageViewController.m in Sources */,
+				CD6324781F189A3900DC6290 /* UIImage+Crop.m in Sources */,
 				CD4AEB3A1F15F7EA00EFD46F /* main.m in Sources */,
+				CD4AEB701F16014C00EFD46F /* TapImageView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -426,7 +445,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = GX4T7SPG84;
 				INFOPLIST_FILE = "EditImage-Demo/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "chk.EditImage-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -437,7 +458,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = GX4T7SPG84;
 				INFOPLIST_FILE = "EditImage-Demo/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "chk.EditImage-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -509,6 +532,7 @@
 				CD4AEB641F15F7EA00EFD46F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CD4AEB651F15F7EA00EFD46F /* Build configuration list for PBXNativeTarget "EditImage-DemoTests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +541,7 @@
 				CD4AEB671F15F7EA00EFD46F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CD4AEB681F15F7EA00EFD46F /* Build configuration list for PBXNativeTarget "EditImage-DemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +550,7 @@
 				CD4AEB6A1F15F7EA00EFD46F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
